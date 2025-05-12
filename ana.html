@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelime & Cümle Ezberleme</title>
+  <link rel="stylesheet" href="ana.css"/>
+</head>
+<body>
+  <!-- 1) Iframe’ler yan yana -->
+  <div class="container">
+    <!-- Google arama iframe -->
+    <div class="item">
+      <iframe
+        src="https://www.google.com/webhp?igu=1"
+        width="500"
+        height="500"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- Çeviri iframe -->
+    <div class="item">
+      <iframe
+        src="https://lingva.ml/?source=auto&target=tr&text=Merhaba%20dünya"
+        width="500"
+        height="500"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- Kelime ekleme bölümü -->
+    <div class="item bottom">
+      <input
+        type="text"
+        id="wordInput"
+        placeholder="Enter the word and press Enter"
+      />
+      <button id="clearBtn">Clear Words</button>
+      <table id="wordTable">
+        <thead>
+          <tr><th>#</th><th>Word</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 2) Cümle bölümü (kelimelerin hemen altında) -->
+  <div class="cümle">
+    <input
+      type="text"
+      id="sentenceInput"
+      placeholder="Enter the sentence and press Enter"
+    />
+    <button id="addSentenceBtn">Add</button>
+    <button id="clearSentencesBtn">Clear Sentences</button>
+
+    <table id="sentenceTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Sentence</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="ana.js"></script>
+</body>
+</html>
